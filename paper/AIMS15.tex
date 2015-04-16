@@ -1,4 +1,4 @@
-\documentclass[smallextended]{svjour3}
+\documentclass[journal]{IEEEtran}
 %\documentclass[11point]{article}
 
 % definitions used by included articles, reproduced here for 
@@ -7,41 +7,19 @@
 \usepackage{color,epsfig,amssymb,amsmath,subfigure,url}
 
 %%%%%%%%%%%%   Macros defined by Gelb %%%%%%%%%%%%%%%%
-\newcommand{\vf}{\boldsymbol f}
-
-\newcommand{\mF}{\mathsf F}
-\newcommand{\mP}{\mathsf P}
-\newcommand{\mPhi}{\mathsf \Phi}
-
-\newcommand{\hf}{\hat{f}}
-\newcommand{\hvf}{\hat{\vf}}
-
-\newcommand{\spB}{\mathcal B}
-
-\newcommand{\se}{{\rm e}}
-
-\newcommand{\bZ}{{\mathbb Z}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\topmargin-0.5in
-\textheight9in
-\oddsidemargin0in
-\evensidemargin0in
-\textwidth6.6in
-
-\title{Awesome Title}
-
-\author{Ben Adcock\thanks{Department of Mathematics, Simon Fraser University, Burnaby, BC V5A 1S6 ({\tt ben\_adcock@sfu.ca})}  \and
-	Rick Archibald\thanks{Computer Science and Mathematics Division, Oak Ridge National Laboratory, Oak Ridge, TN 37831 ({\tt archibaldrk@ornl.gov})}  \and
-        Anne Gelb\thanks{School of Mathematical and Statistical Sciences, Arizona State University, Tempe, AZ, 85287 ({\tt annegelb@asu.edu})}\and
-        Guohui Song\thanks{Department of Mathematics, Clarkson University, Potsdam, NY 13699. ({\tt gsong@clarkson.edu})} \and 
-        Rodrigo B. Platte\thanks{School of Mathematical and Statistical Sciences, Arizona State University, Tempe, AZ, 85287 ({\tt rbp@asu.edu})} \and
-        Edward G. Walsh \thanks{Department of Neuroscience, Brown University, Providence, RI 02912 ({\tt edward\_walsh@brown.edu})}}
-
 \graphicspath{{./pictures/}}
 
 \begin{document}
+\title{Awesome Title}
+
+\author{Ben Adcock,\thanks{Department of Mathematics, Simon Fraser University, Burnaby, BC V5A 1S6 ({\tt ben\_adcock@sfu.ca})} 
+	Rick Archibald,\thanks{Computer Science and Mathematics Division, Oak Ridge National Laboratory, Oak Ridge, TN 37831 ({\tt archibaldrk@ornl.gov})} 
+        Anne Gelb,\thanks{School of Mathematical and Statistical Sciences, Arizona State University, Tempe, AZ, 85287 ({\tt annegelb@asu.edu})}
+        Guohui Song,\thanks{Department of Mathematics, Clarkson University, Potsdam, NY 13699. ({\tt gsong@clarkson.edu})} 
+        Rodrigo B. Platte,\thanks{School of Mathematical and Statistical Sciences, Arizona State University, Tempe, AZ, 85287 ({\tt rbp@asu.edu})} and
+        Edward G. Walsh.\thanks{Department of Neuroscience, Brown University, Providence, RI 02912 ({\tt edward\_walsh@brown.edu})}}
+
+
 
 \newtheorem{thm4}{Theorem}
 \newtheorem{thm5}{Theorem}
@@ -54,7 +32,9 @@
 
 \maketitle
 \input{abstract}
-\keywords{Fourier Data \and  $l^1$ regularization \and Split Bregman \and MRI}
+\begin{IEEEkeywords}
+Fourier Data \and  $l^1$ regularization \and Split Bregman \and MRI.
+\end{IEEEkeywords}
 
 \input{introduction}
 \input{methods}
